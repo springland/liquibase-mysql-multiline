@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: springland
+      dbms: mysql
+      changes:
+ #       - sqlFile:
+ #           path: ./createtable.sql
+ #           relativeToChangelogFile: true
+        - sqlFile:
+            dbms: mysql
+            path: ./test.sql
+            relativeToChangelogFile: true

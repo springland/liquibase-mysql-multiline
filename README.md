@@ -13,3 +13,14 @@ Having same issue with mysql
 
 It seems the delimiter was not set
 
+
+## Solution
+
+
+Set delimiter in the changelog.yml instead of sql file
+
+
+Need to set
+spring.datasource.driver-class-name=software.aws.rds.jdbc.mysql.Driver in order to pickup aurora driver
+otherwise the default logic matches it to mysql driver in org.springframework.boot.jdbc.DatabaseDriver
+

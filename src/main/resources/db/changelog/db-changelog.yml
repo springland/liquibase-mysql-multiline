@@ -11,3 +11,4 @@ databaseChangeLog:
             dbms: mysql
             path: ./test.sql
             relativeToChangelogFile: true
+            endDelimiter: /

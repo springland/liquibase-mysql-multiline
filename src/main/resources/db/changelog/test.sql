@@ -1,5 +1,5 @@
 -- liquibase formatted sql
--- changeset your.name:101 end-delimiter:/
+-- changeset your.name:101
 
 
 CREATE FUNCTION isEligible(
